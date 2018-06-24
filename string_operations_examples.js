@@ -8,7 +8,7 @@ const personalInfromationObject = {
 const age = 24;
 const name = 'Mathew';
 const birthDate = 'May 16 1994'
-//How to generate a string which contains values from variables
+//Ways to create a string which contains values from variables
 
 //Basic string concatination using the "+"" sign
 const oldWayString = 'Hello, my name is ' + name + '. I was borne on ' + birthDate + '. And now I am ' + age + ' years old.'; // this will be equal "Hello, my name is Mathew. I was borne on May 16 1994. And now I am 24 years old."
