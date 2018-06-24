@@ -69,5 +69,5 @@ const upperCaseAgain = lowerCaseString.toUpperCase(); // this will equal "THIS I
 // this method returns a string representing the specified object
 const numberThree = 3;
 const normalExample = 2 + numberThree; // this will equal 5
-const oddExample = 2 + numberThree.toString(); // this will equal "23", yeah I know what you are thinking: JS is wierd! But it's not: by changing one of the variables to string we changed the implied behaviour of the + sign, nurmaly it would mean "add", but if we are dealing with strings it means "concatinate"
+const oddExample = 2 + numberThree.toString(); // this will equal "23", yeah I know what you are thinking: JS is wierd! But it's not: by changing one of the variables to string we changed the implied behaviour of the "+"" sign, normaly it would mean "add", but if we are dealing with strings it means "concatinate"
 const oddExampleUsingQotationMarks = 2 + "3"; // this will also equal "23"
