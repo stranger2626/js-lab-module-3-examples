@@ -33,18 +33,34 @@ const stringWithANumberFromAnArrayFromAnObject = `Mathew's favorite number is ${
 
 //indexOf()
 // it will return the position of the element you hav passed to it. If the element if absent from this string it will return -1
-const yearPosition = birthDate.indexOf('1994'); //this will equal 7
-const mLetterPosition = birthDate.indexOf('M'); //this will equal 0
+const yearPosition = birthDate.indexOf('1994'); // this will equal 7
+const mLetterPosition = birthDate.indexOf('M'); // this will equal 0
 const noneExistingLetterPossition = birthDate.indexOf('I do not exist'); //this will return -1 as it is supposed to :)
 
 //trim()
 // this method removes spece\tabulation simbols from the start of a stering and from its end
 const stringWithSpaces = '      I have a lot of spaces.     ';
-const stringWithoutSpaces = stringWithSpaces.trim(); //this will equal 'I have a lot of spaces.'
+const stringWithoutSpaces = stringWithSpaces.trim(); // this will equal 'I have a lot of spaces.'
 // console.log(`|${stringWithSpaces}|`); //this is here just for the sake of providing an example. Uncomment these two lines to see for yourself 
 // console.log(`|${stringWithoutSpaces}|`); //this is here just for the sake of providing an example. Uncomment these two lines to see for yourself 
 
 //split()
 // this method returns an array of strings that were separated by the string passed to this method as an argument
 const stringOfMonths = 'Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec';
-const arrayOfMonths = stringOfMonths.split(','); //this will be equal [ 'Jan',' Feb',' Mar',' Apr',' May',' Jun',' Jul',' Aug',' Sep',' Oct',' Nov',' Dec' ]
+const arrayOfMonths = stringOfMonths.split(','); // this will be equal [ 'Jan',' Feb',' Mar',' Apr',' May',' Jun',' Jul',' Aug',' Sep',' Oct',' Nov',' Dec' ]
+
+//substr()
+// this method returns the part of a string between the start index and a number of characters after it
+const longString = 'This is a big string... sort of';
+const shortenedString = longString.substring(2, 7); // this will equal "is is"
+const sortOfString = longString.substring(longString.indexOf('big string')); // this will equal "big string... sort of"
+const bigString = longString.substring(longString.indexOf('big'), longString.indexOf('sort')); // this will equal "big string..."
+
+// toLowerCase()
+// this method returns the calling string value converted to lower case
+const upperCaseString = 'THIS IS SPARTA!'
+const lowerCaseString = upperCaseString.toLowerCase(); // this will equal "this is sparta!"
+
+// toUpperCase()
+// this method returns the calling string value converted to uppercase (the value will be converted to a string if it isn't one)
+const upperCaseAgain = lowerCaseString.toUpperCase(); // this will equal "THIS IS SPARTA!"
