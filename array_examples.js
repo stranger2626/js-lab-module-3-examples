@@ -30,6 +30,7 @@ const simpleCombinedArray = [nonSortedArrayOfNumbers, secondNonSortedArrayOfNumb
 // this method adds one or more elements to the end of an array and returns the new length of the array
 const joinedArray = nonSortedArrayOfNumbers.push(secondNonSortedArrayOfNumbers); // this will equal 8, yes 8 as a number(eight)
 // console.log(joinedArray); // if you don't believe me you can uncomment this section and see for yourself
+// but if you just need to add an element to an existing array using push is alright
 
 // Wait, but what happened to the nonSortedArrayOfNumbers array?
 // well it changed, the second array was added to it and now it equals [ [ 8, 3, 11, 2, 92, 42, 33 ], [ 4, 5, 1 ] ]
